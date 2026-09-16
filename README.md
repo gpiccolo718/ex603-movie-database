@@ -15,7 +15,7 @@ Answering these questions shaped the key design decisions in this project: compo
 
 ## Entity Relationship Diagram
 
-![ERD](schema/erd.png)
+![ERD](schema/ERD.png)
 
 ## Repository Structure
 

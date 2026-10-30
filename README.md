@@ -41,3 +41,36 @@ The database consists of five tables:
 - `/schema/schema-definition.md` — Relation schemas, attributes, domains, and primary keys (Task 1.1)
 - `/schema/constraints.md` — Integrity constraints and ON DELETE justifications (Task 1.3)
 - `/analysis/unit1.md` — Modelling justification and reflection (Task 1.4)
+- `/queries/unit3/` — Exploration, NULL-trap repair, and equivalent-form queries (Unit 3)
+- `/queries/unit4/` — Aggregation, conditional aggregation, ROLLUP, and CTE pipeline queries (Unit 4)
+- `/analysis/unit3-finding.md` — Dashboard failure-rate finding (Unit 3)
+- `/analysis/unit4.md` — Unit 4 write-ups and reflection (Tasks 4.1–4.2)
+- `/analysis/unit4-finding.md` — True failure rate breakdown for leadership (Task 4.3)
+- `/screenshots/` — Query and result captures, named after the query each shows
+
+## Query Catalogue
+
+### Unit 3
+
+| File | Query | Business question |
+|---|---|---|
+| queries/unit3/q3_1.sql | 1. Active recent movies | Which available movies were released after 2015? |
+| queries/unit3/q3_1.sql | 2. Distinct statuses | What statuses can a rating have? |
+| queries/unit3/q3_1.sql | 3a / 3b. Range and IN filters | Which ratings fall in a score range, and which are flagged or withdrawn? |
+| queries/unit3/q3_1.sql | 4a–4c. LIKE, NULL, COALESCE | Which titles match a pattern, and which ratings have no withdrawal reason? |
+| queries/unit3/q3_1.sql | 5. Computed columns | How would each published rating be described in plain language? |
+| queries/unit3/q3_2.sql | Part A. NULL trap | How many ratings does a "not spam" filter silently drop, and what is the correct count? |
+| queries/unit3/q3_2.sql | Part B. Alias in WHERE | Which ratings have a weighted score above 5? |
+| queries/unit3/q3_3.sql | Three equivalent forms | Which users have had a rating withdrawn? |
+
+### Unit 4
+
+| File | Query | Business question |
+|---|---|---|
+| queries/unit4/q4_1.sql | 1. Whole-table stats | What do ratings look like across the whole platform, and how many users are rating? |
+| queries/unit4/q4_1.sql | 2. Per movie | Which movies get the most ratings, and how do their average scores compare? |
+| queries/unit4/q4_1.sql | 3. HAVING threshold | Among movies with enough ratings to trust (15+), which have the highest withdrawal rates? |
+| queries/unit4/q4_1.sql | 4. Region × status | How do rating outcomes vary by region? |
+| queries/unit4/q4_2.sql | A. Conditional aggregation | For each movie, how many ratings were received and how many were withdrawn? |
+| queries/unit4/q4_2.sql | B. ROLLUP subtotals | What is each region's withdrawal rate, and what is the platform-wide rate? |
+| queries/unit4/q4_2.sql | C. Pipeline | What is a typical withdrawal rate and score for high-volume movies? |

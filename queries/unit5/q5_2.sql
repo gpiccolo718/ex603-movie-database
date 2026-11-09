@@ -62,6 +62,7 @@ WHERE NOT EXISTS (
     WHERE mo.movie_id = r.movie_id
 )
 ORDER BY mo.movie_id;
+
 -- Query using EXCEPT:
 SELECT
     movie_id

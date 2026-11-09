@@ -46,7 +46,10 @@ The database consists of five tables:
 - `/analysis/unit3-finding.md` — Dashboard failure-rate finding (Unit 3)
 - `/analysis/unit4.md` — Unit 4 write-ups and reflection (Tasks 4.1–4.2)
 - `/analysis/unit4-finding.md` — True failure rate breakdown for leadership (Task 4.3)
-- `/screenshots/` — Query and result captures, named after the query each shows
+- `/queries/unit5/` — Multi-table, junction, self, outer, anti-join, and CROSS JOIN queries, plus an execution plan (Unit 5)
+- `/analysis/unit5.md` — Unit 5 write-ups, execution plan reading, and reflection (Tasks 5.1–5.3)
+- `/analysis/unit5-finding.md` — Recommendations for high-withdrawal and never-rated movies (Task 5.4)
+- `/screenshots/` — Query and result captures, named after the query each shows (Unit 5 captures are in `/screenshots/unit 5/`)
 
 ## Query Catalogue
 
@@ -74,3 +77,16 @@ The database consists of five tables:
 | queries/unit4/q4_2.sql | A. Conditional aggregation | For each movie, how many ratings were received and how many were withdrawn? |
 | queries/unit4/q4_2.sql | B. ROLLUP subtotals | What is each region's withdrawal rate, and what is the platform-wide rate? |
 | queries/unit4/q4_2.sql | C. Pipeline | What is a typical withdrawal rate and score for high-volume movies? |
+
+### Unit 5
+ 
+| File | Query | Business question |
+|---|---|---|
+| queries/unit5/q5_1.sql | Q1. Three-table join | Who rated each movie, which movie was it, and when? |
+| queries/unit5/q5_1.sql | Q2. Junction table | Which movies are tagged Comedy? |
+| queries/unit5/q5_1.sql | Q3. Self-join | Which movies share an origin country with the flagged movies (2, 9, 11)? |
+| queries/unit5/q5_2.sql | Part A. LEFT vs. INNER JOIN | Which movies does an inner join silently drop, and how many? |
+| queries/unit5/q5_2.sql | Part B. RIGHT and FULL OUTER JOIN | Does a RIGHT JOIN match the LEFT JOIN, and are there unmatched rows on either side? |
+| queries/unit5/q5_2.sql | Part C. NOT EXISTS and EXCEPT | Which movies have never been rated? |
+| queries/unit5/q5_3.sql | Part A. CROSS JOIN | What does every movie–genre combination look like, and does the row count equal movies × genres? |
+| queries/unit5/q5_3.sql | Part B. EXPLAIN ANALYZE | How does PostgreSQL execute the three-table join, and which join algorithms does it choose? |

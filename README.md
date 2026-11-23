@@ -139,7 +139,7 @@ The withdrawal rate fell from **22.6%** in the first quarter to **14.6%** in the
 
 ## Video presentation
 
-▶️ **[Watch the presentation](VIDEO_LINK_HERE)** (3–5 minutes): the platform's main question, two or three representative queries including Unit 6 window functions, key findings, and next-quarter recommendations.
+▶️ **[Watch the presentation]((https://1drv.ms/v/c/e01d8fa59718084e/IQCDrqzTpG4aSplCWmTsJ3OPAS0wNvBOu16czGoqwDijLrI?e=I5QMIX))** (3–5 minutes): the platform's main question, two or three representative queries including Unit 6 window functions, key findings, and next-quarter recommendations.
 
 ## How to run it
 
